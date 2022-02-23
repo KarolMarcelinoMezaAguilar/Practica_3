@@ -1,6 +1,4 @@
-function greet(){
-    console.log('Hello');
-}
 let logGreeting = (miParametro) => miParametro();
-
-logGreeting(greet);
+logGreeting(function () {
+    console.log('Hello from a function created on the fly');
+});
